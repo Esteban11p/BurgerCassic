@@ -1,0 +1,33 @@
+.bloqueN1 {
+  border: 0px solid black;
+  position: relative;
+  display: grid;
+  place-items: center;
+}
+
+.bloqueN1::-webkit-scrollbar {
+  display: none;
+}
+
+.slider-track {
+  display: flex;
+  width: calc(90px * 10);
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-90px * 10));
+  }
+}
+
+.bloqueN1 article {
+  transition: transform 1s;
+}
+
+.bloqueN1 article:hover {
+  transform: translateY(20px);
+}

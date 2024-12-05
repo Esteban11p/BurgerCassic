@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Burgers</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+    <link rel="stylesheet" href="modal.css" type="text/css" />
+    <link rel="stylesheet" href="carrucel.css" />
+  </head>
+
+  <body>
+    <center>
+      <header class="cabecera">
+        <img src="Imagenes/logo.png" height="150px" draggable="false" />
+        <h1><em>BurgerClassic</em></h1>
+      </header>
+    </center>
+
+    <section class="container">
+      <div class="bloqueN1">
+        <div class="slider-track">
+          <article id="combo1" draggable="true">
+            <img src="Imagenes/Combo1.jpg" draggable="false" id="imgCombo1" />
+
+            <h3>$ 25.000</h3>
+          </article>
+
+          <article id="combo2" draggable="true">
+            <img src="Imagenes/Combo2.jpg" draggable="false" id="imgCombo2" />
+
+            <h3>$ 18.000</h3>
+          </article>
+
+          <article id="combo3" draggable="true">
+            <img src="Imagenes/Combo3.jpg" draggable="false" id="imgCombo3" />
+
+            <h3>$ 20.000</h3>
+          </article>
+
+          <article id="combo4" draggable="true">
+            <img src="Imagenes/Combo4.jpg" draggable="false" id="imgCombo4" />
+
+            <h3>$ 55.000</h3>
+          </article>
+
+          <article id="combo5" draggable="true">
+            <img src="Imagenes/Combo5.jpg" draggable="false" id="imgCombo5" />
+
+            <h3>$ 17.000</h3>
+          </article>
+
+          <!--Doble-->
+
+          <article id="combo6" draggable="true">
+            <img src="Imagenes/Combo6.jpg" draggable="false" id="imgCombo6" />
+
+            <h3>$ 22.000</h3>
+          </article>
+
+          <article id="combo7" draggable="true">
+            <img src="Imagenes/Combo2.jpg" draggable="false" id="imgCombo7" />
+
+            <h3>$ 30.000</h3>
+          </article>
+
+          <article id="combo8" draggable="true">
+            <img src="Imagenes/Combo3.jpg" draggable="false" id="imgCombo8" />
+
+            <h3>$ 30.000</h3>
+          </article>
+
+          <article id="combo9" draggable="true">
+            <img src="Imagenes/Combo4.jpg" draggable="false" id="imgCombo9" />
+
+            <h3>$ 30.000</h3>
+          </article>
+
+          <article id="combo10" draggable="true">
+            <img src="Imagenes/Combo5.jpg" draggable="false" id="imgCombo10" />
+
+            <h3>$ 30.000</h3>
+          </article>
+        </div>
+      </div>
+
+      <button class="botonesDeMovimiento" id="BotonHamburguesasI">&lt;</button>
+      <button class="botonesDeMovimiento" id="BotonHamburguesasD">&gt;</button>
+
+      <div class="bloqueN2">
+        <article id="burger1" draggable="true">
+          <img src="Imagenes/hamburguesa1.jpg" draggable="false" id="h-img1" />
+
+          <h3>ESPECIAL $ 🍔 15.000</h3>
+        </article>
+
+        <article id="burger2" draggable="true">
+          <img src="Imagenes/hamburguesa2.jpg" draggable="false" id="h-img2" />
+
+          <h3>DOBLE $ 🍔 19.000</h3>
+        </article>
+
+        <article id="burger3" draggable="true">
+          <img src="Imagenes/hamburguesa3.jpg" draggable="false" id="h-img3" />
+
+          <h3>DE POLLO $ 🍔 13.000</h3>
+        </article>
+
+        <article id="burger4" draggable="true">
+          <img src="Imagenes/hamburguesa4.jpg" draggable="false" id="h-img4" />
+
+          <h3>SUPER $ 🍔 14.000</h3>
+        </article>
+
+        <article id="burger5" draggable="true">
+          <img src="Imagenes/hamburguesa5.jpg" draggable="false" id="h-img5" />
+
+          <h3>SENCILLA $ 🍔 11.000</h3>
+        </article>
+      </div>
+
+      <button class="botonesDeMovimiento" id="BotonBebidasI">&lt;</button>
+      <button class="botonesDeMovimiento" id="BotonBebidasD">&gt;</button>
+
+      <div class="bloqueN3">
+        <article id="gaseosa1" draggable="true">
+          <img src="Imagenes/manzana.png" draggable="false" />
+
+          <small>Manzana $ 🥤 3.500</small>
+        </article>
+
+        <article id="gaseosa2" draggable="true">
+          <img src="Imagenes/Colombiana.jpg" draggable="false" />
+
+          <small>Colombiana $ 🥤 3.500</small>
+        </article>
+
+        <article id="gaseosa3" draggable="true">
+          <img src="Imagenes/CocaCola.jpg" draggable="false" />
+
+          <small>Coca-Cola $ 🥤 3.500</small>
+        </article>
+
+        <article id="gaseosa4" draggable="true">
+          <img src="Imagenes/cuatro.jpg" draggable="false" />
+
+          <small>Quatro $ 🥤 3.500</small>
+        </article>
+
+        <article id="gaseosa5" draggable="true">
+          <img src="Imagenes/premio.jpg" draggable="false" />
+
+          <small>Premio $ 🥤 3.500</small>
+        </article>
+      </div>
+    </section>
+
+    <br />
+
+    <img src="Imagenes/Pedido.png" class="pedido" draggable="false" />
+    <aside class="barraLateral" id="miCarro">
+      <center>
+        <div class="conten" id="carro"></div>
+      </center>
+    </aside>
+
+    <div class="cuentaTotal">
+      <br>
+      <label for="total">Cuenta total</label>
+      <br>
+      <span id="total">0</span> COP
+    </div>
+
+    <button id="comprar" class="botonF" onclick="realizarCompra()"><h3>Comprar</h3></button>
+    <button id="Anular" class="botonF" onclick="eliminarCarro()"><h3>Anular</h3></button>
+
+    <div id="ClearBoth"></div>
+
+    <div id="Rs">
+      <h4 style="color: white">Redes sociales:</h4>
+    </div>
+
+    <div class="redesSociales">
+      <a target="_blank" href="https://www.facebook.com/?locale=es_LA"
+        ><img src="Imagenes/facebook.jpg"
+      /></a>
+      <a target="_blank" href="https://twitter.com/"><img src="Imagenes/tuiter.jpg"  /></a>
+      <a target="_blank" href="https://www.youtube.com/"><img src="Imagenes/yutube.jpg" /></a>
+      <a target="_blank" href="https://www.instagram.com/"><img src="Imagenes/insta.jpg" /></a>
+    </div>
+
+    <footer class="pieDePagina">
+     <p>Copyright &copy; 2023 BurgerClassic restaurant - Todos los derechos reservados. Términos y Condiciones</p>
+    </footer>
+
+    <section class="modal">
+      <div class="modal_container">
+        <img src="Imagenes/logo_Modal.png" class="modal_img" />
+        <h2 class="modal_title">Combo Numero 1</h2>
+        <p class="modal_description">
+          este Combo contiene: Doble carne, tocineta, adicción de Queso
+        </p>
+        <a href="#" class="modal_close">Cerrar</a>
+      </div>
+    </section>
+
+    <script src="index.js" type="text/javascript"></script>
+    <script src="modal.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
+  </body>
+</html>

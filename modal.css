@@ -1,0 +1,140 @@
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #111111bd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.modal--show {
+  opacity: 1;
+  pointer-events: unset;
+}
+
+.modal_container {
+  position: absolute;
+  width: 90%;
+  background-color: #fff;
+  margin: auto;
+  max-width: 600px;
+  max-height: 90%;
+  border-radius: 6px;
+  padding: 3em 2.5em;
+  display: grid;
+  gap: 1em;
+  place-items: center;
+  grid-auto-columns: 100%;
+}
+
+.modal_title {
+  font-size: 2.5rem;
+}
+
+.modal_description {
+  margin-bottom: 10px;
+}
+
+.modal_img {
+  width: 90%;
+  max-width: 300px;
+}
+
+.modal_close {
+  text-decoration: none;
+  color: #fff;
+  background-color: #f26250;
+  padding: 1em 3em;
+  border: 1px solid;
+  border-radius: 6px;
+  display: inline-block;
+  font-weight: 300;
+  transition: background-color 0.3s;
+}
+
+.modal_close:hover {
+  color: #f26250;
+  background-color: #fff;
+}
+
+.hamburguesa1 {
+  color: wheat;
+}
+
+.agregarCarrito {
+  background-image: linear-gradient(rgb(54, 199, 54), green);
+  font-size: 15px;
+  color: white;
+  padding: 10px;
+  border-radius: 10%;
+  border: none;
+}
+
+.agregarCarrito:active {
+  background-image: none; /* Elimina el fondo del botón */
+  color: transparent; /* Oculta el texto */
+}
+
+.agregarCarrito:active::after {
+  content: "";
+  background-image: url(Imagenes/chulo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 60%;
+  transform: translate(-50%, -50%);
+  width: 50px;
+  height: 50px;
+  z-index: 1;
+}
+
+.productoDiv {
+  border: 1px solid #444;
+  width: 98%;
+  height: 70px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.productoDiv img {
+  height: 70px;
+  margin: 0%;
+}
+
+.productoDiv input {
+  width: 30px;
+  height: 20px;
+}
+
+.productoDiv button {
+  width: 30px;
+  height: 20px;
+}
+
+.productoDiv h4,
+.productoDiv input {
+  line-height: 70px;
+  margin-top: 6px;
+  margin-right: 5px;
+  padding-left: 5px;
+  flex: 1;
+}
+
+.productoDiv input,
+.productoDiv .delete {
+  margin-top: 30px;
+}
+
+.productoDiv .delete {
+  cursor: pointer;
+  margin-left: 30px;
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}
